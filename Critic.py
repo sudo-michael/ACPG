@@ -68,7 +68,7 @@ class LFATDCritic(Critic):
 
 
 class LFAACPGCritic(Critic):
-    def __init__(self, env, iht_size, num_tiles, tiling_size, eta, c, m, lr):
+    def __init__(self, env, iht_size, num_tiles, tiling_size, eta, c, lr):
         super().__init__(env)
         self.tabular_tc = TabularTileCoding(iht_size, num_tiles, tiling_size)
         self.tc_feature = TileCodingFeatures(self.env.action_space, self.tabular_tc.get_tile_coding_args())
