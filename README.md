@@ -54,15 +54,19 @@ args = {
 ```
 
 To run the TD algorithm for direct representation use:
+
 `python GridWrold_ModelBased/Direct_TabularNPG_LFATD.py`
 
 To run the ACPG algorithm for direct representation use:
+
 `python GridWrold_ModelBased/Direct_TabularACPG_LFAACPG.py`
 
 To run the TD algorithm for sofmtax representation use:
+
 `python GridWrold_ModelBased/Softmax_TabularsMDPO_LFATD.py`
 
 To run the ACPG algorithm for softmax representation use:
+
 `python GridWrold_ModelBased/Softmax_TabularsMDPO_LFAACPG.py`
 
 
