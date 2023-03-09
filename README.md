@@ -41,24 +41,28 @@ args = {
         "mc": [10000], (only for ACPG)
         "lrc":[100000] (only for ACPG)
 }
-
 "env": env=0 is Cliff world, env=1 is Deep sea treasure
-
 "num_iterations": number of actor iterations for update
-
 "run": number of runs
-
 "eta": actor step size
-
 "c": 
-
 "iht_size":  feature dimension 
-
 "num_tiles": number of tiles in tile coding feature generation
-
 "tiling_size": size of tiles in tile coding feature generation
-
 "mc": maximum number of iterations for critic optimization
-
 "lrc": maximum step size for critic optimization
 ```
+
+To run the TD algorithm for direct representation use:
+`python GridWrold_ModelBased/Direct_TabularNPG_LFATD.py`
+
+To run the ACPG algorithm for direct representation use:
+`python GridWrold_ModelBased/Direct_TabularACPG_LFAACPG.py`
+
+To run the TD algorithm for sofmtax representation use:
+`python GridWrold_ModelBased/Softmax_TabularsMDPO_LFATD.py`
+
+To run the ACPG algorithm for softmax representation use:
+`python GridWrold_ModelBased/Softmax_TabularsMDPO_LFAACPG.py`
+
+
