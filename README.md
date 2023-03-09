@@ -41,7 +41,7 @@ To run the TD algorithm for sofmtax representation use:
 
 To run the ACPG algorithm for softmax representation use:
 
-`python GridWrold_ModelBased/Softmax_TabularsMDPO_LFAACPG.py`
+`python GridWrold_ModelBased/Softmax_TabularACPG_LFAACPG.py`
 
 Following shows the arguments for above scripts along with their default values. You can modify hyper parameter values by specifying their name and their values. Also, note that some arguments are only for ACPG algorithm.
 
@@ -69,7 +69,3 @@ args = {
 "mc": maximum number of iterations for critic optimization
 "lrc": maximum step size for critic optimization
 ```
-
-
-
-
