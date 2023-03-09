@@ -27,7 +27,24 @@ Here, we assume that model (transition and reward) of environment is known.
 Similarlay, `Softmax_TabularsMDPO_LFATD.py` and `Softmax_TabularACPG_LFAACPG.py` contains the code for softmax representation.
 
 
-Following shows the arguments for above scripts along with their default values. Note that some arguments are only for ACPG algorithm.
+To run the TD algorithm for direct representation with default hyper parameters use:
+
+`python GridWrold_ModelBased/Direct_TabularNPG_LFATD.py`
+
+To run the ACPG algorithm for direct representation use:
+
+`python GridWrold_ModelBased/Direct_TabularACPG_LFAACPG.py`
+
+To run the TD algorithm for sofmtax representation use:
+
+`python GridWrold_ModelBased/Softmax_TabularsMDPO_LFATD.py`
+
+To run the ACPG algorithm for softmax representation use:
+
+`python GridWrold_ModelBased/Softmax_TabularsMDPO_LFAACPG.py`
+
+Following shows the arguments for above scripts along with their default values. You can modify hyper parameter values by specifying their name and their values. Also, note that some arguments are only for ACPG algorithm.
+
 ```
 args = {
         "env": [0],
@@ -53,20 +70,6 @@ args = {
 "lrc": maximum step size for critic optimization
 ```
 
-To run the TD algorithm for direct representation use:
 
-`python GridWrold_ModelBased/Direct_TabularNPG_LFATD.py`
-
-To run the ACPG algorithm for direct representation use:
-
-`python GridWrold_ModelBased/Direct_TabularACPG_LFAACPG.py`
-
-To run the TD algorithm for sofmtax representation use:
-
-`python GridWrold_ModelBased/Softmax_TabularsMDPO_LFATD.py`
-
-To run the ACPG algorithm for softmax representation use:
-
-`python GridWrold_ModelBased/Softmax_TabularsMDPO_LFAACPG.py`
 
 
