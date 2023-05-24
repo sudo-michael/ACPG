@@ -19,8 +19,9 @@ optimization can be TD,Advantage-TD or decision-aware critic.
 ## How to run code?
 
 ### Tabular Gridorld Environment
+We consider two gridworld environments, Cliff World and Frozen Lake, to test the actor-critic algorithms. In all experiments, the environment can be given as input to the running file.
 
-#### Model-based
+#### Direct Functional Representation
 Here, we assume that model (transition and reward) of environment is known.
 * Folder **GridWorld_ModelBased**
 
