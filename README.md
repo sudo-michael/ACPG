@@ -20,10 +20,9 @@ optimization can be TD,Advantage-TD or decision-aware critic.
 
 ### Tabular Gridorld Environment
 We consider two gridworld environments, Cliff World and Frozen Lake, to test the actor-critic algorithms. In all experiments, the environment can be given as input to the running file.
-
+All the files associated with gridworld environments are in * Folder **GridWorld_ModelBased**
 #### Direct Functional Representation
 Here, we assume that model (transition and reward) of environment is known.
-* Folder **GridWorld_ModelBased**
 
 `Direct_TabularNPG_LFATD.py` and `Direct_TabularACPG_LFAACPG.py` contains the code for running TD algorithm, and our lagorithm for direct representation.
 Similarlay, `Softmax_TabularsMDPO_LFATD.py` and `Softmax_TabularACPG_LFAACPG.py` contains the code for softmax representation.
