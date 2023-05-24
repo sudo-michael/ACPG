@@ -87,21 +87,32 @@ Following shows the arguments for the script `Softmax_LinearACPG_LFAACPG.py` alo
 args = {
         "env": ["CW"],
         "sampling": ["MB"],
-        "d": 
-        "num_iterations":[150000],
+        "num_iterations":[50000],
         "run":[5],
         "eta":[0.01],
+        "d": [80],
+        "actor_stop_trs": [1e-4],
+        "actor_max_num_iterations": [1000],
+        "actor_max_lr" : [1000],
+        "critic_stop_trs: [1e-6],
+        "critic_max_num_iterations": [1000],
+        "critic_max_lr" : [1000],
+        "init_c": [0.01],
+        "c_in_stepsize": [0]
+        
 }
 "env": env=CW is Cliff world, env=FL is Frozen Lake
 "sampling": sampling=MB is known MDP, sampling=MC is Monte Carlo sampling
-
-"num_iterations": number of actor iterations for update
-"run": number of runs
-"eta": actor step size
-"c": 
-"iht_size":  feature dimension 
-"num_tiles": number of tiles in tile coding feature generation
-"tiling_size": size of tiles in tile coding feature generation
-"mc": maximum number of iterations for critic optimization
-"lrc": maximum step size for critic optimization
+"num_iterations": number of actor policy updates
+"run": number of distinct runs
+"eta": actor functional step size
+"d": critic dimension/expressivity
+"actor_stop_trs": threshold on gradient norm to stop inner-loop (Only for linear actor)
+"actor_max_num_iterations": maximum number of iteration in inner-loop (Only for linear actor)
+"actor_max_lr" : Armijo maximum step size  (Only for linear actor)
+"critic_stop_trs": threshold on gradient norm to stop inner-loop (Only for decision-aware)
+"critic_max_num_iterations": maximum number of iteration in inner-loop (Only for decision-aware)
+"critic_max_lr" : Armijo maximum step size  (Only for decision-aware)
+"init_c": trade-off parameter (Only for decision-aware)
+"c_in_stepsize": whether to involve `c` in functional step size or not (Only for decision-aware)
 ```
