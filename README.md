@@ -1,7 +1,7 @@
 # ACPG
 
 This repository contains code of actor-critic algorithms in direct and softmax functional representations. The actor can be paramterized with tabular or linear paramterization.  The actor's policy update in direct case is MDPO algorithm, and in softmax case is sMDPO algorithm. The critic's paramterization is linear and its 
-optimization can be TD,Advantage-TD or decision-aware critic.
+optimization can be TD,Advantage TD or decision-aware critic.
 
 ## Installation
 * Create a virtual env using python3
@@ -19,30 +19,39 @@ optimization can be TD,Advantage-TD or decision-aware critic.
 ## How to run code?
 
 ### Tabular Gridorld Environment
-We consider two gridworld environments, Cliff World and Frozen Lake, to test the actor-critic algorithms. In all experiments, the environment can be given as input to the running file using `--env` argument.
-All the files associated with gridworld environments are in `GridWorld` folder. Also, whether the critic samples from the environment or use the known MDP as ground-truth can be set using `--sampling` argument.
+We consider two gridworld environments, Cliff World and Frozen Lake, to test the actor-critic algorithms. All the files associated with gridworld environments are in `GridWorld` folder
+In all experiments, the environment can be given as input to the running file using `--env` argument.
+Also, whether the critic samples from the environment or use the known MDP as ground-truth can be set using `--sampling` argument.
 
-#### Direct Functional Representation
+#### Direct Representation / Tabular Actor
 
-`Direct_TabularNPG_LFATD.py` and `Direct_TabularACPG_LFAACPG.py` contains the code for running TD algorithm, and our lagorithm for direct representation.
-Similarlay, `Softmax_TabularsMDPO_LFATD.py` and `Softmax_TabularACPG_LFAACPG.py` contains the code for softmax representation.
+To run the TD algorithm with tabular actor using default hyper parameters use:
+
+`python GridWrold/Direct_TabularNPG_LFATD.py --critic_alg TD`
+
+To run the Advantage TD algorithm with tabular actor using default hyper parameters use:
+
+`python GridWrold/Direct_TabularNPG_LFATD.py --critic_alg AdvTD`
+
+To run the decision-aware algorithm with tabular actor using default hyper parameters use:
+
+`python GridWrold/Direct_TabularACPG_LFAACPG.py`
 
 
-To run the TD algorithm for direct representation with default hyper parameters use:
+#### Direct Representation / Linear Actor
 
-`python GridWrold_ModelBased/Direct_TabularNPG_LFATD.py`
+To run the TD algorithm with linear actor using default hyper parameters use:
+`python GridWrold/Direct_LinearMDPO_LFATD.py --critic_alg TD`
 
-To run the ACPG algorithm for direct representation use:
+To run the Advantage TD algorithm with linear actor using default hyper parameters use:
+`python GridWrold/Direct_LinearMDPO_LFATD.py --critic_alg AdvTD`
 
-`python GridWrold_ModelBased/Direct_TabularACPG_LFAACPG.py`
+To run the decision-aware algorithm with linear actor using default hyper parameters use:
+`python GridWrold/Direct_LinearACPG_LFAACPG.py`
 
-To run the TD algorithm for sofmtax representation use:
 
-`python GridWrold_ModelBased/Softmax_TabularsMDPO_LFATD.py`
 
-To run the ACPG algorithm for softmax representation use:
 
-`python GridWrold_ModelBased/Softmax_TabularACPG_LFAACPG.py`
 
 Following shows the arguments for above scripts along with their default values. You can modify hyper parameter values by specifying their name and their values. Also, note that some arguments are only for ACPG algorithm.
 
