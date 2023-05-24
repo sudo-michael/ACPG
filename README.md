@@ -41,28 +41,60 @@ To run the decision-aware algorithm with tabular actor using default hyper param
 #### Direct Representation / Linear Actor
 
 To run the TD algorithm with linear actor using default hyper parameters use:
+
 `python GridWrold/Direct_LinearMDPO_LFATD.py --critic_alg TD`
 
 To run the Advantage TD algorithm with linear actor using default hyper parameters use:
+
 `python GridWrold/Direct_LinearMDPO_LFATD.py --critic_alg AdvTD`
 
 To run the decision-aware algorithm with linear actor using default hyper parameters use:
+
 `python GridWrold/Direct_LinearACPG_LFAACPG.py`
 
+#### Softmax Representation / Tabular Actor
+
+To run the TD algorithm with tabular actor using default hyper parameters use:
+
+`python GridWrold/Softmax_TabularsMDPO_LFATD.py --critic_alg TD`
+
+To run the Advantage TD algorithm with tabular actor using default hyper parameters use:
+
+`python GridWrold/Softmax_TabularsMDPO_LFATD.py --critic_alg AdvTD`
+
+To run the decision-aware algorithm with tabular actor using default hyper parameters use:
+
+`python GridWrold/Softmax_TabularACPG_LFAACPG.py`
 
 
+#### Softmax Representation / Linear Actor
 
+To run the TD algorithm with linear actor using default hyper parameters use:
 
-Following shows the arguments for above scripts along with their default values. You can modify hyper parameter values by specifying their name and their values. Also, note that some arguments are only for ACPG algorithm.
+`python GridWrold/Softmax_LinearsMDPO_LFATD.py --critic_alg TD`
+
+To run the Advantage TD algorithm with linear actor using default hyper parameters use:
+
+`python GridWrold/Softmax_LinearsMDPO_LFATD.py --critic_alg AdvTD`
+
+To run the decision-aware algorithm with linear actor using default hyper parameters use:
+
+`python GridWrold/Softmax_LinearACPG_LFAACPG.py`
+
+Following shows the arguments for the script `Softmax_LinearACPG_LFAACPG.py` along with their default values. You can modify hyper parameter values by specifying their name and their values. Also, note that some arguments are only for ACPG algorithm and some arguments are only for the case that actor in parameterized linearly.
 
 ```
 args = {
-        "env": [0],
+        "env": ["CW"],
+        "sampling": ["MB"],
+        "d": 
         "num_iterations":[150000],
         "run":[5],
         "eta":[0.01],
 }
-"env": env=0 is Cliff world, env=1 is Deep sea treasure
+"env": env=CW is Cliff world, env=FL is Frozen Lake
+"sampling": sampling=MB is known MDP, sampling=MC is Monte Carlo sampling
+
 "num_iterations": number of actor iterations for update
 "run": number of runs
 "eta": actor step size
