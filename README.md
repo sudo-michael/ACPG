@@ -25,59 +25,59 @@ Also, whether the critic samples from the environment or use the known MDP as gr
 
 #### Direct Representation / Tabular Actor
 
-To run the TD algorithm with tabular actor using default hyper parameters use:
+To run the TD algorithm with default parameters use:
 
 `python GridWrold/Direct_TabularNPG_LFATD.py --critic_alg TD`
 
-To run the Advantage TD algorithm with tabular actor using default hyper parameters use:
+To run the Advantage TD algorithm with default parameters use:
 
 `python GridWrold/Direct_TabularNPG_LFATD.py --critic_alg AdvTD`
 
-To run the decision-aware algorithm with tabular actor using default hyper parameters use:
+To run the decision-aware algorithm with default parameters use:
 
 `python GridWrold/Direct_TabularACPG_LFAACPG.py`
 
 
 #### Direct Representation / Linear Actor
 
-To run the TD algorithm with linear actor using default hyper parameters use:
+To run the TD algorithm with default parameters use:
 
 `python GridWrold/Direct_LinearMDPO_LFATD.py --critic_alg TD`
 
-To run the Advantage TD algorithm with linear actor using default hyper parameters use:
+To run the Advantage TD algorithm with default parameters use:
 
 `python GridWrold/Direct_LinearMDPO_LFATD.py --critic_alg AdvTD`
 
-To run the decision-aware algorithm with linear actor using default hyper parameters use:
+To run the decision-aware algorithm with default parameters use:
 
 `python GridWrold/Direct_LinearACPG_LFAACPG.py`
 
 #### Softmax Representation / Tabular Actor
 
-To run the TD algorithm with tabular actor using default hyper parameters use:
+To run the TD algorithm with default parameters use:
 
 `python GridWrold/Softmax_TabularsMDPO_LFATD.py --critic_alg TD`
 
-To run the Advantage TD algorithm with tabular actor using default hyper parameters use:
+To run the Advantage TD algorithm with default parameters use:
 
 `python GridWrold/Softmax_TabularsMDPO_LFATD.py --critic_alg AdvTD`
 
-To run the decision-aware algorithm with tabular actor using default hyper parameters use:
+To run the decision-aware algorithm with default parameters use:
 
 `python GridWrold/Softmax_TabularACPG_LFAACPG.py`
 
 
 #### Softmax Representation / Linear Actor
 
-To run the TD algorithm with linear actor using default hyper parameters use:
+To run the TD algorithm with default parameters use:
 
 `python GridWrold/Softmax_LinearsMDPO_LFATD.py --critic_alg TD`
 
-To run the Advantage TD algorithm with linear actor using default hyper parameters use:
+To run the Advantage TD algorithm with default parameters use:
 
 `python GridWrold/Softmax_LinearsMDPO_LFATD.py --critic_alg AdvTD`
 
-To run the decision-aware algorithm with linear actor using default hyper parameters use:
+To run the decision-aware algorithm with default parameters use:
 
 `python GridWrold/Softmax_LinearACPG_LFAACPG.py`
 
