@@ -1,6 +1,7 @@
 # ACPG
 
-This repository contains code for running TD and ACPG algorithms in direct and softmax representations.
+This repository contains code of actor-critic algorithms in direct and softmax functional representations. The actor can be paramterized with tabular or linear paramterization.  The actor's policy update in direct case is MDPO algorithm, and in softmax case is sMDPO algorithm. The critic's paramterization is linear and its 
+optimization can be TD/Advantage-TD or decision-aware critic.
 
 ## Installation
 * Create a virtual env using python3
