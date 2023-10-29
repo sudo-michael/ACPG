@@ -1,6 +1,6 @@
 # ACPG
 
-This repository contains implementations of actor-critic algorithms described in 'Decision-aware Actor Critic with Funtion  ' paper on two grid-world and one continuous environments. You can find the paper here: . For running the algorithms please install the required packages and run the following commands.  
+This repository contains implementations of actor-critic algorithms described in 'Decision-Aware Actor-Critic with Function Approximation and Theoretical Guarantees' paper on two grid-world and one continuous environments. You can find the paper here: . For running the algorithms please install the required packages and run the following commands.  
 
 ## Installation
 * Create a virtual env using python3
