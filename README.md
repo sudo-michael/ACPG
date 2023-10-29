@@ -1,13 +1,16 @@
 # ACPG
 
-This repository contains implementations of actor-critic algorithms described in 'Decision-Aware Actor-Critic with Function Approximation and Theoretical Guarantees' paper on two grid-world and one continuous environments. You can find the paper here: arxiv.org/abs/2305.15249 For running the algorithms please install the required packages and run the following commands. 
+This repository contains implementations of actor-critic algorithms described in 'Decision-Aware Actor-Critic with Function Approximation and Theoretical Guarantees' paper on two grid-world and one continuous environments. You can find the paper here: arxiv.org/abs/2305.15249. For running the algorithms please install the required packages and run the following commands. 
+
+## Algorithms.
+We basically compare the proposed decision-aware critic loss function with squared (TD) loss functions (either on value function Q or advantage function A) when coupled with a linearly paramterized actor. The actor can view/update the policy in direct or softamx functional representations. 
 
 ## Installation
-* Create a virtual env using python3
+* Create a virtual env using python3.
 
 `virtualenv -p python3 <envname>`
 
-* Activate virtual environment
+* Activate the virtual environment.
 
 `source envname/bin/activate`
 
@@ -15,7 +18,7 @@ This repository contains implementations of actor-critic algorithms described in
 
 `pip install -r requirements.txt`
 
-## How to run code?
+
 
 ### Tabular Gridorld Environment
 We consider two gridworld environments, Cliff World and Frozen Lake, to test the actor-critic algorithms. All the files associated with gridworld environments are in `GridWorld` folder
