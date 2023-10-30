@@ -1,6 +1,9 @@
 # ACPG
 
 This repository contains implementations of actor-critic algorithms described in 'Decision-Aware Actor-Critic with Function Approximation and Theoretical Guarantees' paper (https://arxiv.org/abs/2305.15249) on two grid-world environments. For running the algorithms please install the required packages and run the following commands. 
+
+![Comparison of three critic objective functions with varying capacity](figs/.png)
+
 ## Installation
 * Create a virtual env using python3.
 `virtualenv -p python3 <envname>`
