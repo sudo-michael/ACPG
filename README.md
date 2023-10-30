@@ -1,9 +1,9 @@
 # ACPG
 
-This repository contains implementations of actor-critic algorithms described in 'Decision-Aware Actor-Critic with Function Approximation and Theoretical Guarantees' paper on two grid-world and one continuous environments. You can find the paper here: arxiv.org/abs/2305.15249. For running the algorithms please install the required packages and run the following commands. 
+This repository contains implementations of actor-critic algorithms described in 'Decision-Aware Actor-Critic with Function Approximation and Theoretical Guarantees' paper on two grid-world environments. You can find the paper here: arxiv.org/abs/2305.15249. For running the algorithms please install the required packages and run the following commands. 
 
 ## Algorithms.
-We basically compare the proposed decision-aware critic loss function with squared (TD) loss functions (either on value function Q or advantage function A) when coupled with a linearly paramterized actor. The actor can view/update the policy in direct or softamx functional representations. 
+We compare the proposed decision-aware critic loss function with squared (TD) loss functions (either on value function Q or advantage function A) when coupled with a linearly parameterized actor. The actor can view/update the policy in direct or softamx functional representations. 
 
 ## Installation
 * Create a virtual env using python3.
