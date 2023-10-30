@@ -42,7 +42,7 @@ python -u main.py \
 
 You can also see the configuration parameters here:
 
-# Configuration Parameters
+## Configuration Parameters
 - `--load_config`: Whether to use configured parameters or new parameters. (Default: 0)
 
 - `--env`: Environment selection, choose between Cliff World (CW) or Frozen Lake (FL). (Default: "CW")
