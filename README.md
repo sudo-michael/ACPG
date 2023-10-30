@@ -2,7 +2,7 @@
 
 This repository contains implementations of actor-critic algorithms described in 'Decision-Aware Actor-Critic with Function Approximation and Theoretical Guarantees' paper (https://arxiv.org/abs/2305.15249) on two grid-world environments. For running the algorithms please install the required packages and run the following commands. 
 
-![Comparison of three critic objective functions with varying capacity](figs/.png)
+![Comparison of three critic objective functions with varying capacity](figs/CW_MB_Linear_full_fixed.png)
 
 ## Installation
 * Create a virtual env using python3.
@@ -28,6 +28,11 @@ In order to execute the algorithms, you should run `main.py` with the correspond
 
 For instance, the following runs ACPG method on Cliff World environment with a linear actor (d=80) on direct representation, and the agent samples using Monte Carlo.
 ```
-python -u main.py --env "CW" --sampling MC --critic_alg 'ACPG' --representation 'direct' --actor_param 'linear' --critic_d 80
+python -u main.py --env "CW" \
+--sampling "MC" \
+--critic_alg "ACPG" \
+--representation "direct" 
+--actor_param "linear" \
+--critic_d 80
 ```
 
