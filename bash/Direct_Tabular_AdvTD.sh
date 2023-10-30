@@ -8,4 +8,4 @@ eta=$1
 d=$2
 sampling=$3
 
-python -u main.py --env "CW" --sampling $sampling --critic_alg 'AdvMSE' --representation 'direct' --actor_param 'tabular' --d $d --eta $eta
+python -u main.py --env "CW" --sampling $sampling --critic_alg 'AdvMSE' --representation 'direct' --actor_param 'tabular' --critic_d $d --eta $eta
