@@ -93,4 +93,12 @@ You can also see the configuration parameters here:
 
 - `--critic_stop_trs`: Critic threshold on grad norm to break the inner-loop. (Default: 1e-6)
 
-
+## Notes
+When changing the feature size, the number of tiles and tiling size should also be updated:
+```
+--critic_d 40  --critic_num_tiles 6 --critic_tiling_size 1
+--critic_d 50  --critic_num_tiles 6 --critic_tiling_size 1
+--critic_d 60  --critic_num_tiles 4 --critic_tiling_size 3
+--critic_d 80  --critic_num_tiles 5 --critic_tiling_size 3
+--critic_d 100 --critic_num_tiles 6 --critic_tiling_size 3
+```
