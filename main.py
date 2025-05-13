@@ -4,8 +4,8 @@ import os
 import yaml
 from Actor import DirectLinearMDPOActor, SoftmaxLinearsMDPOActor, DirectTabularNPGActor, SoftmaxTabularsMDPOActor
 from Critic import DirectLFAACPGCritic, DirectLFATDCritic, SoftmaxLFATDCritic, SoftmaxLFAACPGCritic
-from ACPG.environments.TabularMDPs import *
-from ACPG.utils import *
+from environments.TabularMDPs import *
+from utils import *
 from Sampling import MCSampling, TDSampling
 import logging
 
@@ -163,7 +163,7 @@ def run(cfg):
             Q_sam = sampler.get_data(curr_policy)
 
         # get Q from the critic.
-        Q_hat = critic.get_estimated_Q(Q_sam, curr_policy, d)
+        Q_hat = critic.get_estimated_A(Q_sam, curr_policy, d)
 
 
         # update the policy with Q_hat

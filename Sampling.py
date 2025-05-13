@@ -1,6 +1,6 @@
 import numpy as np
 import multiprocessing as mp
-from ACPG.environments.TabularMDPs import *
+from environments.TabularMDPs import *
 import random
 import statistics
 
